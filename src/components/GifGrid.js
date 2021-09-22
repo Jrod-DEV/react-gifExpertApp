@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const GifGrid = ({ category }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+      getGifs();
+  }, [])
+
   const getGifs = async () => {
     const url =
       'https://api.giphy.com/v1/gifs/search?q=Dragon Ball&limit=10&api_key=KqfoGktcFlE0UGtURwvOIbP85VUkpIKt';
@@ -18,11 +24,13 @@ export const GifGrid = ({ category }) => {
     console.log(data);
   };
 
-  getGifs();
+//   getGifs();
 
   return (
     <>
       <h3> {category} </h3>
+      <h3> {count} </h3>
+      <button onClick={() => setCount(count + 1)}>Gif</button>
     </>
   );
 };
