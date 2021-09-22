@@ -1,3 +1,5 @@
+# Small app made in React with Hooks to search and display gifs.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
