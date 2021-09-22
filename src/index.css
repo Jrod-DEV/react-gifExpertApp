@@ -1,5 +1,6 @@
 * {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2rem;
 }
 
 body {
@@ -7,7 +8,8 @@ body {
 }
 
 input {
+  border-color: aquamarine;
   width: 100%;
-  font: size 1.2rem;
-  color: blue;
+  font-size: 1.2rem;
+  color: rgb(10, 123, 13);
 }
